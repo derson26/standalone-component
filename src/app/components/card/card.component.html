@@ -1,16 +1,12 @@
-<mat-card>
+<mat-card class="dog-card">
     <mat-card-header>
-        <mat-card-title>Title</mat-card-title>
-        <mat-card-subtitle>Subtitle</mat-card-subtitle>
+        <mat-card-title>{{dog.name}}</mat-card-title>
     </mat-card-header>
-    <img matCardImage src="Card wide image source">
+    <img matCardImage [src]="dog.url">
     <mat-card-content>
-        Text content
+        {{dog.description}}
     </mat-card-content>
-    <mat-card-actions>
-        <button mat-button>Action1</button>
+    <mat-card-actions  >
+        <a  mat-raised-button color="primary" routerLink="/detail/{{index}}">{{dog.name}} detail</a>
     </mat-card-actions>
-    <mat-card-footer>
-        Footer
-    </mat-card-footer>
 </mat-card>

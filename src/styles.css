@@ -12,3 +12,7 @@ html, body { height: 100%; min-height: 100%;}
 body {
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+img {
+  width: 100%;
+}

@@ -3,7 +3,6 @@ import { CommonModule } from '@angular/common';
 import { ActivatedRoute, RouterModule } from '@angular/router';
 import { MaterialModule } from '../../modules/material/material.module';
 import { DogService } from '../../services/dog.service';
-import { map, Observable, of } from 'rxjs';
 import { IDog } from '../../interfaces/dog';
 
 @Component({

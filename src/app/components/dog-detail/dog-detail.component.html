@@ -1,15 +1,15 @@
 
-  <section fxLayout="row" fxLayoutAlign="center center">
+  <section fxLayout="row" fxLayoutAlign="center center" *ngIf="dog$ | async as dog">
     <mat-card class="dog-card">
       <mat-card-header>
-          <mat-card-title>{{dog.name}}</mat-card-title>
+          <mat-card-title >{{dog.name}}</mat-card-title>
       </mat-card-header>
       <img matCardImage [src]="dog.url">
       <mat-card-content>
           <!-- {{dog.description | async }} -->
       </mat-card-content>
       <mat-card-actions  >
-          <a  mat-raised-button color="primary" routerLink="/">Home Page</a>
+          <a mat-raised-button color="primary" routerLink="/">Home Page</a>
       </mat-card-actions>
   </mat-card>
   </section>

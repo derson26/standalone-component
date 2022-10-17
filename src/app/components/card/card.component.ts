@@ -15,13 +15,10 @@ export class CardComponent implements OnInit {
   @Input() dog!:IDog;
   @Input() index!:number;
 
-  constructor() { }
+  constructor() { /* TODO document why this constructor is empty */  }
 
   ngOnInit(): void {
-  }
-
-  dogDetail(){
+    // TODO document why this method 'ngOnInit' is empty
 
   }
-
 }

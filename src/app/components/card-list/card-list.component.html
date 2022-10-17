@@ -1,9 +1,12 @@
-<mat-card class="card-list">
+
+
   <div fxLayout="row wrap"  fxLayoutGap="10px grid" fxLayoutAlign="space-between center">
-  <ng-container *ngFor="let dog of dogList$ | async; let i = index;">
-    <dog-card fxFlex="25%" fxFlex.sm="50%" fxFlex.md="33.3%" fxFlex.xl="20%" fxFlex.xs="100%" [dog]="dog"
-    [index]="i">
-    </dog-card>
-  </ng-container>
-</div>
-</mat-card>
+    <ng-container *ngFor="let dog of dogList$ | async; let i = index;">
+      <dog-card fxFlex="25%" fxFlex.sm="50%" fxFlex.md="33.3%" fxFlex.xl="20%" fxFlex.xs="100%" [dog]="dog"
+      [index]="i">
+      </dog-card>
+    </ng-container>
+  </div>
+
+
+

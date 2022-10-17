@@ -1,3 +1,6 @@
-main {
-  height: 100%;
- }
+.main{
+  width: 80vw;
+  box-shadow: 1px 1px 5px rgb(220, 129, 129);
+  margin: auto;
+  min-height: 100%;
+}
